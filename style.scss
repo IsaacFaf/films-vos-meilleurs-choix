@@ -1,1 +1,20 @@
 @use 'partials/top-picks';
+@use 'partials/cards';
+@use "sass:color";
+@use 'partials/variables';
+@use 'partials/mixins/text';
+$color:#73BA9B;
+
+.card{
+    margin: 5px;
+    background: color.adjust(variables.$primary, $whiteness: 15%);
+
+
+    &__btn{
+        @include text.small-cap;
+         &:hover{
+            background: color.adjust(variables.$primary, $lightness: 25%);
+            color: color.complement(variables.$primary);
+        }
+    }
+}
