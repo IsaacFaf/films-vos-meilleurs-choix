@@ -7,14 +7,20 @@ $color:#73BA9B;
 
 .card{
     margin: 5px;
-    background: color.adjust(variables.$primary, $whiteness: 15%);
-
-
     &__btn{
+        width:100%;
+        padding: 5px;
+        background-color: variables.$primary;
+        background: color.adjust(variables.$primary, $lightness: 15%);
         @include text.small-cap;
+        color: color.complement(variables.$primary);
+
+
+
          &:hover{
+            background-color: variables.$primary;
             background: color.adjust(variables.$primary, $lightness: 25%);
-            color: color.complement(variables.$primary);
+            
         }
     }
 }
