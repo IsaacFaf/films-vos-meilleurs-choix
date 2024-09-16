@@ -3,8 +3,8 @@
 @use "sass:color";
 @use 'partials/variables';
 @use 'partials/mixins/text';
-$color:#73BA9B;
-
+//$color:#73BA9B; //TESTING
+//STYLES DES CARTES
 .card{
     margin: 5px;
     &__btn{
